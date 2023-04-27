@@ -28,7 +28,7 @@ Firewall database จากข้อมูลข้างต้นที่ไ�
 		
 
 5. Test
-
+![log2-tree](https://user-images.githubusercontent.com/122291438/234913992-c0ba0318-a56b-4710-9b6b-3860d48d18c6.png)
 		5.1 แบ่ง Train 70%  Test 30%
 		5.2 แบ่ง Train 80%  Test 20%
 		5.3 แบ่ง Train 90%  Test 10%

@@ -45,7 +45,7 @@ show ROC หรือ chart ธรรมดา
 
 7.ใช้model สามารถที่จะimprove number ได้เป็น....% 
 
-
+https://user-images.githubusercontent.com/127765032/234913998-0fc9f0b7-fd61-4f3d-aa74-08ade6f84eec.png
 
 
 

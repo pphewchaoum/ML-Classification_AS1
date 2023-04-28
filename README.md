@@ -69,6 +69,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 
 		4.1 Cart Method
 		จากการrun model Cart จากข้อมูลtest 30% ได้F1 score = 0.9977 20% ได้F1 score = 0.9975 10% ได้F1 score = 0.9971
+		#GridSearCV
 		tree_clas = DecisionTreeClassifier(random_state=1024)
 		param_tree = {'max_features': ['auto', 'sqrt', 'log2'],
 			      'ccp_alpha': [0.1, .01, .001],
@@ -86,21 +87,55 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 </p>	
 	
 		4.2 Random Forest
-		
+		#GridSearCV
+		RT_clas = RandomForestClassifier(n_estimators=100,random_state=1024) 
+		param_RT = {'max_features': ['auto', 'sqrt', 'log2'], 
+				    'ccp_alpha': [0.1, .01, .001], 
+				    'max_depth' : [2,3, 4, 5, 6, 7], 
+				    'criterion' :['gini', 'entropy']} 
+		grid_RT = GridSearchCV(estimator=RT_clas, param_grid=param_RT, cv=5, verbose=True) 
+		grid_RT.fit(x_train, y_train) 
+		grid_RT.best_estimator_
+		ans_RT = grid_RT.predict(x_test)
+		print(classification_report(y_test, ans_RT))
+จากการทำ GridSearchCV ได้ค่าพารามิเตอร์คือ RandomForestClassifier(ccp_alpha=0.001, criterion='entropy', max_depth=7, max_features='auto', random_state=1024)
 <p align="center">
   <img width="800" height="300" src="https://user-images.githubusercontent.com/127765032/235181209-5c2e318e-b28e-4b73-8ee3-29237d881562.png">
 </p>
 	
-		4.3 XGBoot
+		4.3 XGBoost
+		xgb_cls = xgb.XGBClassifier(use_label_encoder=False, n_estimators=10)
+		xgb_cls.fit(x_train, y_train.astype(int))
+
+		ans_xgb = xgb_cls.predict(x_test)
+		print(classification_report(y_test, ans_xgb))
+
+		plot_tree(xgb_cls, rankdir='UT', num_trees=1)
+		fig = plt.gcf()
+		fig.set_size_inches(15, 10)
+
+		plt.show()
+		plt.savefig('log2-xgboot.png')
 
 <p align="center">
   <img width="800" height="300" src="https://user-images.githubusercontent.com/127765032/235181225-9c3f7524-adc7-49d0-926c-a52342fd17d0.png">
+  <img width="800" height="300" src="https://user-images.githubusercontent.com/122291438/235189296-016859a0-4102-456e-bbbb-746c24a53cca.png">
 </p>
+
 		
 		4.4 K-NN 
 	จากการrun modle KNN ค่าF1จาการ testข้อมูล 30% ให้F1 score = 0.9936 ในขณะที่ test 20% ได้F1 score 0.9933 และ F1 score 0.9924
 	Test 10% นั้นสะท้อนในให้เห็นว่่ายิ่งมีdataในการtest มากขึ้นยิ่งเพิ่มประสิทธิภาพของmodel
-
+	
+	#GridSearCV
+	knn = KNeighborsClassifier()
+	parameters = {"n_neighbors": range(1,11),
+                      "metric": ('minkowski','euclidean','manhattan'),
+                      "weights": ('uniform','distance')}
+	grid_knn = GridSearchCV(knn, parameters, cv=5)
+	grid_knn.fit(x_train,y_train)
+	grid_knn.best_estimator_
+จากการทำ GridSearchCV ได้ค่าพารามิเตอร์คือ KNeighborsClassifier(metric='manhattan', n_neighbors=1)
 <p align="center">
   <img width="800" height="300" src="https://user-images.githubusercontent.com/127765032/235183406-75751a0d-546c-4f64-bb32-006d02779e66.png">
 </p>

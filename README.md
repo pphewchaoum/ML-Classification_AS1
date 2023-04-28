@@ -1,7 +1,9 @@
 # ML-Classification_AS1
 Project Firewall database
 
-## 1. Get data from log file link https://www.kaggle.com/datasets/tunguz/internet-firewall-data-set
+## 1. Get data 
+
+data source from log file link https://www.kaggle.com/datasets/tunguz/internet-firewall-data-set
 
 Fatih Ertam (2018) ได้วิเคราะห์ข้อมูลการบันทึกบนอุปกรณ์ไฟร์วอลล์และควบคุมการรับส่งข้อมูลทางอินเทอร์เน็ตตามผลการวิเคราะห์ที่มาจากการบันทึกการใช้อุปกรณ์ไฟร์วอลล์ของ Firat University ซึ่งจำแนกข้อมูลออกเป็น 4 คลาส allow deny drop และ reset-both โดยใช้วิธี SVM ได้แก่ Linear, Polynomial, Sigmoid และ RBF วัดประสิทธิภาพของแบบจำลองโดยใช้ Precesion recall และ  F1-score เราสามารถระบุได้ว่าข้อมูลที่สร้างขึ้นจากการจัดหมวดหมู่มีความเกี่ยวข้องกับข้อมูลที่ตั้งใจไว้มากน้อยเพียงใด ในการศึกษานี้ ใช้ 11 ลักษณะ ในการวิเคราะห์ข้อมูลเหตุการณ์จำนวน 65,532 ครั้ง ตามตารางด้านล่างนี้ 
 	
@@ -65,7 +67,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 
 ### 3.1 Cart Method
 		จากการrun model Cart จากข้อมูลtest 30% ได้F1 score = 0.9977 20% ได้F1 score = 0.9975 10% ได้F1 score = 0.9971
-		#GridSearCV
+		#GridSearchCV
 		tree_clas = DecisionTreeClassifier(random_state=1024)
 		param_tree = {'max_features': ['auto', 'sqrt', 'log2'],
 			      'ccp_alpha': [0.1, .01, .001],
@@ -123,7 +125,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 	จากการrun modle KNN ค่า F1 จากการ test ข้อมูล 30% ให้ F1 score = 0.9936 ในขณะที่ test 20% ได้ F1 score 0.9933 และ F1 score 0.9924
 	Test 10% นั้นสะท้อนให้เห็นว่่ายิ่งมี data ในการ test มากขึ้นยิ่งเพิ่มประสิทธิภาพของ model
 	
-	#GridSearCV
+	#GridSearchCV
 	knn = KNeighborsClassifier()
 	parameters = {"n_neighbors": range(1,11),
                       "metric": ('minkowski','euclidean','manhattan'),
@@ -140,7 +142,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 
 ## 4.Evaluation
 
-### 4.1 F1 Score เทียบผล
+### 4.1 เปรียนเทียบค่า F1 Score 
 		
 <p align="center">
   <img width="1000" height="500" src="https://user-images.githubusercontent.com/122291438/235169008-9e32d34a-96b7-4ae5-a718-8c0f09ebd5be.png">

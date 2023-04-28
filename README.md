@@ -47,10 +47,9 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 		3.6 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 10000
 		3.7 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 100000
 	
-		
-
-
-<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 24 38" src="https://user-images.githubusercontent.com/127765032/235159698-0f0a7407-7860-46f7-a641-0cc8bc192049.png">
+<p align="center">
+  <img width="800" height="300" src="https://user-images.githubusercontent.com/127765032/235159698-0f0a7407-7860-46f7-a641-0cc8bc192049.png">
+</p>		
 
 		3.8 การหา Top Destionation port ที่มีการเกิดtransactionมากที่สุด
 		3.9 การหา Top Source port ที่มีการเกิดtransactionมากที่สุด

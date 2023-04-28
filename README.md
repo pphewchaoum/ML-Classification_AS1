@@ -1,7 +1,7 @@
 # ML-Classification_AS1
 Project Firewall database
 
-##1. Get data from log file link https://www.kaggle.com/datasets/tunguz/internet-firewall-data-set
+## 1. Get data from log file link https://www.kaggle.com/datasets/tunguz/internet-firewall-data-set
 
 Fatih Ertam (2018) ได้วิเคราะห์ข้อมูลการบันทึกบนอุปกรณ์ไฟร์วอลล์และควบคุมการรับส่งข้อมูลทางอินเทอร์เน็ตตามผลการวิเคราะห์ที่มาจากการบันทึกการใช้อุปกรณ์ไฟร์วอลล์ของ Firat University ซึ่งจำแนกข้อมูลออกเป็น 4 คลาส allow deny drop และ reset-both โดยใช้วิธี SVM ได้แก่ Linear, Polynomial, Sigmoid และ RBF วัดประสิทธิภาพของแบบจำลองโดยใช้ Precesion recall และ  F1-score เราสามารถระบุได้ว่าข้อมูลที่สร้างขึ้นจากการจัดหมวดหมู่มีความเกี่ยวข้องกับข้อมูลที่ตั้งใจไว้มากน้อยเพียงใด ในการศึกษานี้ ใช้ 11 ลักษณะ ในการวิเคราะห์ข้อมูลเหตุการณ์จำนวน 65,532 ครั้ง ตามตารางด้านล่างนี้ 
 	
@@ -19,52 +19,51 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 
 ข้อจำกัดในงานวิจัยนี้คือ SVM ใช้เพื่อจัดการปัญหาที่เกี่ยวข้องกับสองคลาสขึ้นไป ไม่เหมาะกับการใช้กับข้อมูลที่มีความสูงต่ำกว่า data point จึงต้องแปลงข้อมูลให้อยู่ใน input space ไปสู่ transformed Space ที่เรียกว่า Feature space จึงสามารถใช้ตัวแบบ SVM ได้ในการแบ่ง ข้อมูลด้วย Hyperplane เช่น Polynomial Kernel, Radial Basis Function(RBF), Sigmoid Kernel 
 
-2. ขั้นตอน Collect data, inspectation data, Data Exploration ( EDA ) 
-2.1 จำนวนActionที่เกิดขึ้นในtransaction
+## 2. ขั้นตอน Collect data, inspectation data, Data Exploration ( EDA ) 
+### 2.1 จำนวนActionที่เกิดขึ้นในtransaction
 
 	
 <p align="center">
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235164910-e0f082c4-f042-4aeb-b368-aed89fd65dd6.png">
 </p>
 		
-2.2 การหาค่าmeanของ Elapsed time (sec)
+### 2.2 การหาค่าmeanของ Elapsed time (sec)
 		
 <p align="center">
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235164916-79592a7a-f093-4f59-b899-5e02bccd2ef8.png">
 </p>
 
-2.3 การหาค่า meanของ Bytes
+### 2.3 การหาค่า meanของ Bytes
 
 <p align="center">
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235164925-3aad5a00-bcb3-4344-8aa0-b0588d5bc8a9.png">
 </p>	
 		
-2.4 การหา correlation ของ Bytes & time แบบไม่ได้ remove bytes ที่เป็นoutliner ออก
-2.5 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 1000
-2.6 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 10000
-2.7 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 100000
+### 2.4 การหา correlation ของ Bytes & time แบบไม่ได้ remove bytes ที่เป็นoutliner ออก
+### 2.5 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 1,000 ,น้อยกว่าเท่ากับ 10,000 และ น้อยกว่าเท่ากับ 100,000
 	
 <p align="center">
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235159698-0f0a7407-7860-46f7-a641-0cc8bc192049.png">
 </p>		
 
-		3.8 การหา Top Destionation port ที่มีการเกิดtransactionมากที่สุด
-		3.9 การหา Top Source port ที่มีการเกิดtransactionมากที่สุด
+### 2.6 การหา Top Destionation port ที่มีการเกิด transaction มากที่สุด
+### 2.7 การหา Top Source port ที่มีการเกิด transaction มากที่สุด
 		
 <p align="center">
   <img width="1000" height="500" src="https://user-images.githubusercontent.com/127765032/235161200-675e846d-fd93-4892-aab1-c7ee69c39089.png">
 </p>			
 
 
-		3.10 การหา Correlation heatmap เพื่อดูความสัมพันธ์ของFeature ทุกตัว
+### 2.8 การหา Correlation heatmap เพื่อดูความสัมพันธ์ของFeature ทุกตัว
+
 <p align="center">
   <img width="1000" height="500" src="https://user-images.githubusercontent.com/127765032/235173429-5b1c5752-d22a-4f45-8c87-b2ed970c338f.png">
 </p>		
 		
 
-4. Traning Model Tools
+## 3. Traning Model Tools 
 
-		4.1 Cart Method
+### 3.1 Cart Method
 		จากการrun model Cart จากข้อมูลtest 30% ได้F1 score = 0.9977 20% ได้F1 score = 0.9975 10% ได้F1 score = 0.9971
 		#GridSearCV
 		tree_clas = DecisionTreeClassifier(random_state=1024)
@@ -83,8 +82,8 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235169339-deee6f76-2974-409d-a072-1710a4969754.png">
 </p>	
 	
-		4.2 Random Forest
-		#GridSearCV
+### 3.2 Random Forest
+		#GridSearchCV
 		RT_clas = RandomForestClassifier(n_estimators=100,random_state=1024) 
 		param_RT = {'max_features': ['auto', 'sqrt', 'log2'], 
 				    'ccp_alpha': [0.1, .01, .001], 
@@ -100,7 +99,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
   <img width="1000" height="220" src="https://user-images.githubusercontent.com/127765032/235181209-5c2e318e-b28e-4b73-8ee3-29237d881562.png">
 </p>
 	
-		4.3 XGBoost
+### 3.3 XGBoost
 		xgb_cls = xgb.XGBClassifier(use_label_encoder=False, n_estimators=10)
 		xgb_cls.fit(x_train, y_train.astype(int))
 
@@ -120,9 +119,9 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 </p>
 
 		
-		4.4 K-NN 
-	จากการrun modle KNN ค่าF1จาการ testข้อมูล 30% ให้F1 score = 0.9936 ในขณะที่ test 20% ได้F1 score 0.9933 และ F1 score 0.9924
-	Test 10% นั้นสะท้อนในให้เห็นว่่ายิ่งมีdataในการtest มากขึ้นยิ่งเพิ่มประสิทธิภาพของmodel
+### 3.4 K-NN 
+	จากการrun modle KNN ค่า F1 จากการ test ข้อมูล 30% ให้ F1 score = 0.9936 ในขณะที่ test 20% ได้ F1 score 0.9933 และ F1 score 0.9924
+	Test 10% นั้นสะท้อนให้เห็นว่่ายิ่งมี data ในการ test มากขึ้นยิ่งเพิ่มประสิทธิภาพของ model
 	
 	#GridSearCV
 	knn = KNeighborsClassifier()
@@ -139,9 +138,9 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 	
 
 
-6.Evaluation
+## 4.Evaluation
 
-		6.1 F1 Score เทียบผล
+### 4.1 F1 Score เทียบผล
 		
 <p align="center">
   <img width="1000" height="500" src="https://user-images.githubusercontent.com/122291438/235169008-9e32d34a-96b7-4ae5-a718-8c0f09ebd5be.png">

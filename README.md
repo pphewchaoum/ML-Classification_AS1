@@ -60,10 +60,13 @@ SVM ที่เลือกฟังก์ชันการเปิดใช�
 <img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 02 51" src="https://user-images.githubusercontent.com/127765032/235169339-deee6f76-2974-409d-a072-1710a4969754.png">		
 	
 		4.2 Random Forest
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 35 35" src="https://user-images.githubusercontent.com/127765032/235177026-efdc781c-b692-4e41-877b-c1edb8d7d9ef.png">
+
+<img width="1054" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 52 59" src="https://user-images.githubusercontent.com/127765032/235181209-5c2e318e-b28e-4b73-8ee3-29237d881562.png">
+
+
 	
 		4.3 XGBoot
-<img width="1054" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 47 34" src="https://user-images.githubusercontent.com/127765032/235179757-a3668cc3-cf04-48af-b805-c7d8e265c037.png">		
+<img width="1054" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 53 07" src="https://user-images.githubusercontent.com/127765032/235181225-9c3f7524-adc7-49d0-926c-a52342fd17d0.png">	
 		
 		4.4 K-NN
 		4.5 Support Vector Machine 

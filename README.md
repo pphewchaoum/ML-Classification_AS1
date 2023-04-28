@@ -5,7 +5,10 @@ Project Firewall database
 
 Fatih Ertam (2018) ได้วิเคราะห์ข้อมูลการบันทึกบนอุปกรณ์ไฟร์วอลล์และควบคุมการรับส่งข้อมูลทางอินเทอร์เน็ตตามผลการวิเคราะห์ที่มาจากการบันทึกการใช้อุปกรณ์ไฟร์วอลล์ของ Firat University ซึ่งจำแนกข้อมูลออกเป็น 4 คลาส allow deny drop และ reset-both โดยใช้วิธี SVM ได้แก่ Linear, Polynomial, Sigmoid และ RBF วัดประสิทธิภาพของแบบจำลองโดยใช้ Precesion recall และ  F1-score เราสามารถระบุได้ว่าข้อมูลที่สร้างขึ้นจากการจัดหมวดหมู่มีความเกี่ยวข้องกับข้อมูลที่ตั้งใจไว้มากน้อยเพียงใด ในการศึกษานี้ ใช้ 11 ลักษณะ ในการวิเคราะห์ข้อมูลเหตุการณ์จำนวน 65,532 ครั้ง ตามตารางด้านล่างนี้ 
 	
-<img align="right" width="100" height="100" src="https://user-images.githubusercontent.com/122291438/235178139-78356fc9-1c01-4ac2-80aa-adf48f618edf.png"
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/122291438/235178139-78356fc9-1c01-4ac2-80aa-adf48f618edf.png">
+</p>
+
 
 
 SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM+Linear ให้ค่า precision สูงสุดที่ 67.5% และ SVM+RBF ให้ค่าคะแนน F1 สูงสุดที่ 76.4% ในขณะที่ SVM+Polynomial ให้ค่า precision และ recall อยู่ในระดับต่ำ เมื่อใช้ค่าเฉลี่ย จะเห็นได้ชัดว่าตัวแยกประเภทตามฟังก์ชันการเปิดใช้งาน SVM+RBF นั้นดีที่สุด สำหรับแต่ละคลาส (Table III.)

@@ -9,6 +9,7 @@ Project Firewall database
 
 
 SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM+Linear ให้ค่า precision สูงสุดที่ 67.5% และ SVM+RBF ให้ค่าคะแนน F1 สูงสุดที่ 76.4% ในขณะที่ SVM+Polynomial ให้ค่า precision และ recall อยู่ในระดับต่ำ เมื่อใช้ค่าเฉลี่ย จะเห็นได้ชัดว่าตัวแยกประเภทตามฟังก์ชันการเปิดใช้งาน SVM+RBF นั้นดีที่สุด สำหรับแต่ละคลาส (Table III.)
+	
 	![Screenshot 2023-04-28 214448](https://user-images.githubusercontent.com/122291438/235179021-07bb4b52-393c-4d03-bcd3-7ae82aafc8d7.png)
 
 ข้อจำกัดในงานวิจัยนี้คือ SVM ใช้เพื่อแยกสองคลาส แต่อาจใช้เพื่อจัดการปัญหาที่เกี่ยวข้องกับสองคลาสขึ้นไป ไม่เหมาะกับการใช้กับข้อมูลที่มีความสูงต่ำกว่า data point จึงต้องแปลงข้อมูลให้อยู่ใน input space ไปสู่ transformed Space ที่เรียกว่า Feature space จึงสามารถใช้ตัวแบบ SVM ได้ในการแบ่ง ข้อมูลด้วย Hyperplane เช่น Polynomial Kernel, Radial Basis Function(RBF), Sigmoid Kernel 

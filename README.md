@@ -56,7 +56,14 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 4. Traning Model Tools
 
 		4.1 Cart Method
-		
+		tree_clas = DecisionTreeClassifier(random_state=1024)
+		param_tree = {'max_features': ['auto', 'sqrt', 'log2'],
+			      'ccp_alpha': [0.1, .01, .001],
+			      'max_depth' : [3, 4, 5, 6, 7, 8, 9, 10],
+			      'criterion' :['gini', 'entropy']}
+		grid_tree = GridSearchCV(estimator=tree_clas, param_grid=param_tree, cv=5, verbose=True)
+		grid_tree.fit(x_train, y_train)
+		grid_tree.best_estimator_
 		
 <img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 02 51" src="https://user-images.githubusercontent.com/127765032/235169339-deee6f76-2974-409d-a072-1710a4969754.png">		
 	

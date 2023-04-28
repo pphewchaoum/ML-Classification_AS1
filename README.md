@@ -1,7 +1,13 @@
 # ML-Classification_AS1
 Project Firewall database
+1. นายภัทรกร ผิวชอุ่ม 6510422024
+2. นางสาววิชุนันท์ คำภิโร 6510422027
+3. นายวศิน ถาวรวัฒนะ 6510422013
 
-## 1. Get data from log file link https://www.kaggle.com/datasets/tunguz/internet-firewall-data-set
+
+## 1. Get data 
+
+source from https://www.kaggle.com/datasets/tunguz/internet-firewall-data-set
 
 Fatih Ertam (2018) ได้วิเคราะห์ข้อมูลการบันทึกบนอุปกรณ์ไฟร์วอลล์และควบคุมการรับส่งข้อมูลทางอินเทอร์เน็ตตามผลการวิเคราะห์ที่มาจากการบันทึกการใช้อุปกรณ์ไฟร์วอลล์ของ Firat University ซึ่งจำแนกข้อมูลออกเป็น 4 คลาส allow deny drop และ reset-both โดยใช้วิธี SVM ได้แก่ Linear, Polynomial, Sigmoid และ RBF วัดประสิทธิภาพของแบบจำลองโดยใช้ Precesion recall และ  F1-score เราสามารถระบุได้ว่าข้อมูลที่สร้างขึ้นจากการจัดหมวดหมู่มีความเกี่ยวข้องกับข้อมูลที่ตั้งใจไว้มากน้อยเพียงใด ในการศึกษานี้ ใช้ 11 ลักษณะ ในการวิเคราะห์ข้อมูลเหตุการณ์จำนวน 65,532 ครั้ง ตามตารางด้านล่างนี้ 
 	
@@ -139,7 +145,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 	
 ## 4.Evaluation
 
-### 4.1 ผล F1 Score 
+### 4.1 ผล precision recall และ F1 Score 
 		
 <p align="center">
   <img width="1000" height="500" src="https://user-images.githubusercontent.com/122291438/235169008-9e32d34a-96b7-4ae5-a718-8c0f09ebd5be.png">
@@ -148,7 +154,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 สรุปผล: จากการทดลอง จะเห็นได้อย่างชัดเจนว่าของ F1 score ของ xgboost มากที่สุด = 99.79% ในขณะที่ Model อื่น average อยู่ที่ 87.99% นอกจากนี้ยังสามารถเพิ่ม
 F1 score ของSVM ได้มากกว่าในreport ที่กล่าวมาข้างต้นจากเดิม 76.4 % โดยปรับimblance data และ Feature scaling (normalization) ใน pycarte F1 score = 93.34% 
 
-
+### 4.2 ผล Confusion Matrix	
 
 		
 	

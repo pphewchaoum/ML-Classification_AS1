@@ -121,7 +121,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 
 		
 		4.4 K-NN 
-	จากการrun modle KNN ค่าF1จาการ testข้อมูล 30% ให้F1 score = 0.9936 ในขณะที่ test 20% ได้F1 score 0.9933 และ F1 score 0.9924
+	จากการrun model KNN ค่าF1จาการ testข้อมูล 30% ให้F1 score = 0.9936 ในขณะที่ test 20% ได้F1 score 0.9933 และ F1 score 0.9924
 	Test 10% นั้นสะท้อนในให้เห็นว่่ายิ่งมีdataในการtest มากขึ้นยิ่งเพิ่มประสิทธิภาพของmodel
 	
 	#GridSearCV
@@ -148,7 +148,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 </p>
 
 สรุปผล: จากการทดลอง จะเห็นได้อย่างชัดเจนว่าของ F1 score ของ xgboost มากที่สุด = 99.79% ในขณะที่ Model อื่น average อยู่ที่ 87.99% นอกจากนี้ยังสามารถเพิ่ม
-F1 score ของSVM ได้มากกว่าในreport ที่กล่าวมาข้างต้นจากเดิม 76.4 % โดยปรับimblance data และ Feacture scaling (normalization) ใน pycarte F1 score = 93.34% 
+F1 score ของSVM ได้มากกว่าในreport ที่กล่าวมาข้างต้นจากเดิม 76.4 % โดยปรับimblance data และ Feature scaling (normalization) ใน pycarte F1 score = 93.34% 
 
 
 

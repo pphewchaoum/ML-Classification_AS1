@@ -19,33 +19,30 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 
 ข้อจำกัดในงานวิจัยนี้คือ SVM ใช้เพื่อจัดการปัญหาที่เกี่ยวข้องกับสองคลาสขึ้นไป ไม่เหมาะกับการใช้กับข้อมูลที่มีความสูงต่ำกว่า data point จึงต้องแปลงข้อมูลให้อยู่ใน input space ไปสู่ transformed Space ที่เรียกว่า Feature space จึงสามารถใช้ตัวแบบ SVM ได้ในการแบ่ง ข้อมูลด้วย Hyperplane เช่น Polynomial Kernel, Radial Basis Function(RBF), Sigmoid Kernel 
 
-2. ทำการ Collect data และ inpectation data
-3. ทำ Data Exploration ( EDA ) 
-
-		3.1 จำนวนActionที่เกิดขึ้นในtransaction
+2. ขั้นตอน Collect data, inspectation data, Data Exploration ( EDA ) 
+2.1 จำนวนActionที่เกิดขึ้นในtransaction
 
 	
 <p align="center">
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235164910-e0f082c4-f042-4aeb-b368-aed89fd65dd6.png">
 </p>
 		
-		3.2 การหาค่าmeanของ Elapsed time (sec)
+2.2 การหาค่าmeanของ Elapsed time (sec)
 		
 <p align="center">
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235164916-79592a7a-f093-4f59-b899-5e02bccd2ef8.png">
 </p>
 
-
-		3.3 การหาค่า meanของ Bytes
+2.3 การหาค่า meanของ Bytes
 
 <p align="center">
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235164925-3aad5a00-bcb3-4344-8aa0-b0588d5bc8a9.png">
 </p>	
 		
-		3.4 การหา correlation ของ Bytes & time แบบไม่ได้ remove bytes ที่เป็นoutliner ออก
-		3.5 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 1000
-		3.6 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 10000
-		3.7 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 100000
+2.4 การหา correlation ของ Bytes & time แบบไม่ได้ remove bytes ที่เป็นoutliner ออก
+2.5 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 1000
+2.6 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 10000
+2.7 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 100000
 	
 <p align="center">
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235159698-0f0a7407-7860-46f7-a641-0cc8bc192049.png">
@@ -150,7 +147,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
   <img width="1000" height="500" src="https://user-images.githubusercontent.com/122291438/235169008-9e32d34a-96b7-4ae5-a718-8c0f09ebd5be.png">
 </p>
 
-สรุปผล: จากการทดลอง จะเห็นได้อย่างชัดเจนค่าของ F1 score ของ xgboost มาหที่สุด = 99.79% ในขณะที่ Model อื่น average อยู่ที่ 87.99%
+สรุปผล: จากการทดลอง จะเห็นได้อย่างชัดเจนว่าของ F1 score ของ xgboost มากที่สุด = 99.79% ในขณะที่ Model อื่น average อยู่ที่ 87.99%
 
 
 

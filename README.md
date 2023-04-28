@@ -69,8 +69,8 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 		4.3 XGBoot
 <img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 53 07" src="https://user-images.githubusercontent.com/127765032/235181225-9c3f7524-adc7-49d0-926c-a52342fd17d0.png">	
 		
-	4.4 K-NN การ runค่าKNNในการ testข้อมูล 30% ให้F1 score = 0.9936 ในขณะที่ test 20% ได้F1 score 0.9933 และ 
-	F1 score 0.9924 Test 10% 
+		4.4 K-NN 
+	การ runค่าKNNในการ testข้อมูล 30% ให้F1 score = 0.9936 ในขณะที่ test 20% ได้F1 score 0.9933 และ F1 score 0.9924 Test 10% 
 
 <img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 22 01 37" src="https://user-images.githubusercontent.com/127765032/235183406-75751a0d-546c-4f64-bb32-006d02779e66.png">
 

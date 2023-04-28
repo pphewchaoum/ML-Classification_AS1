@@ -139,7 +139,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 	
 ## 4.Evaluation
 
-### 4.1 F1 Score เทียบผล
+### 4.1 ผล F1 Score 
 		
 <p align="center">
   <img width="1000" height="500" src="https://user-images.githubusercontent.com/122291438/235169008-9e32d34a-96b7-4ae5-a718-8c0f09ebd5be.png">

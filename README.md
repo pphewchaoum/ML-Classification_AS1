@@ -9,15 +9,15 @@ Firewall database จากข้อมูลข้างต้นที่ไ�
 
 		3.1 จำนวนActionที่เกิดขึ้นในtransaction
 		
-<img width="700" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 34" src="https://user-images.githubusercontent.com/127765032/235164910-e0f082c4-f042-4aeb-b368-aed89fd65dd6.png">
+<img width="400" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 34" src="https://user-images.githubusercontent.com/127765032/235164910-e0f082c4-f042-4aeb-b368-aed89fd65dd6.png">
 		
 		3.2 การหาค่าmeanของ Elapsed time (sec)
 
-<img width="700" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 45" src="https://user-images.githubusercontent.com/127765032/235164916-79592a7a-f093-4f59-b899-5e02bccd2ef8.png">
+<img width="400" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 45" src="https://user-images.githubusercontent.com/127765032/235164916-79592a7a-f093-4f59-b899-5e02bccd2ef8.png">
 
 		3.3 การหาค่า meanของ Bytes
 
-<img width="700" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 58" src="https://user-images.githubusercontent.com/127765032/235164925-3aad5a00-bcb3-4344-8aa0-b0588d5bc8a9.png">
+<img width="400" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 58" src="https://user-images.githubusercontent.com/127765032/235164925-3aad5a00-bcb3-4344-8aa0-b0588d5bc8a9.png">
 		
 		
 		3.4 การหา correlation ของ Bytes & time แบบไม่ได้ remove bytes ที่เป็นoutliner ออก
@@ -28,13 +28,13 @@ Firewall database จากข้อมูลข้างต้นที่ไ�
 		
 
 
-<img width="700" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 24 38" src="https://user-images.githubusercontent.com/127765032/235159698-0f0a7407-7860-46f7-a641-0cc8bc192049.png">
+<img width="400" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 24 38" src="https://user-images.githubusercontent.com/127765032/235159698-0f0a7407-7860-46f7-a641-0cc8bc192049.png">
 
 		3.8 การหา Top Destionation port ที่มีการเกิดtransactionมากที่สุด
 		3.9 การหา Top Source port ที่มีการเกิดtransactionมากที่สุด
 		
 		
-<img width="700" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 30 17" src="https://user-images.githubusercontent.com/127765032/235161200-675e846d-fd93-4892-aab1-c7ee69c39089.png">
+<img width="400" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 30 17" src="https://user-images.githubusercontent.com/127765032/235161200-675e846d-fd93-4892-aab1-c7ee69c39089.png">
 
 
 

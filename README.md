@@ -100,7 +100,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 		print(classification_report(y_test, ans_RT))
 จากการทำ GridSearchCV ได้ค่าพารามิเตอร์คือ RandomForestClassifier(ccp_alpha=0.001, criterion='entropy', max_depth=7, max_features='auto', random_state=1024)
 <p align="center">
-  <img width="800" height="300" src="https://user-images.githubusercontent.com/127765032/235181209-5c2e318e-b28e-4b73-8ee3-29237d881562.png">
+  <img width="800" height="220" src="https://user-images.githubusercontent.com/127765032/235181209-5c2e318e-b28e-4b73-8ee3-29237d881562.png">
 </p>
 	
 		4.3 XGBoost
@@ -118,8 +118,8 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 		plt.savefig('log2-xgboot.png')
 
 <p align="center">
-  <img width="800" height="300" src="https://user-images.githubusercontent.com/127765032/235181225-9c3f7524-adc7-49d0-926c-a52342fd17d0.png">
-  <img width="800" height="300" src="https://user-images.githubusercontent.com/122291438/235189296-016859a0-4102-456e-bbbb-746c24a53cca.png">
+  <img width="800" height="200" src="https://user-images.githubusercontent.com/127765032/235181225-9c3f7524-adc7-49d0-926c-a52342fd17d0.png">
+  <img width="800" height="350" src="https://user-images.githubusercontent.com/122291438/235189296-016859a0-4102-456e-bbbb-746c24a53cca.png">
 </p>
 
 		
@@ -137,16 +137,11 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 	grid_knn.best_estimator_
 จากการทำ GridSearchCV ได้ค่าพารามิเตอร์คือ KNeighborsClassifier(metric='manhattan', n_neighbors=1)
 <p align="center">
-  <img width="800" height="300" src="https://user-images.githubusercontent.com/127765032/235183406-75751a0d-546c-4f64-bb32-006d02779e66.png">
+  <img width="800" height="150" src="https://user-images.githubusercontent.com/127765032/235183406-75751a0d-546c-4f64-bb32-006d02779e66.png">
 </p>
 	
 
-5. Test
 
-		5.1 แบ่ง Train 70%  Test 30%
-		5.2 แบ่ง Train 80%  Test 20%
-		5.3 แบ่ง Train 90%  Test 10%
-	
 6.Evaluation
 
 		6.1 F1 Score เทียบผล
@@ -162,9 +157,6 @@ show ROC หรือ chart ธรรมดา
 
 7.ใช้model สามารถที่จะimprove number ได้เป็น....% 
 
-<p align="center">
-  <img width="800" height="300" src="https://user-images.githubusercontent.com/127765032/234913998-0fc9f0b7-fd61-4f3d-aa74-08ade6f84eec.png">
-</p>
 
 
 

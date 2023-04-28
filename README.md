@@ -157,12 +157,12 @@ F1 score ของSVM ได้มากกว่าในreport ที่กล
 ### 4.2 ผล Confusion Matrix	
 
 <p align="center">
-  <img width="1000" height="500" src="https://user-images.githubusercontent.com/122291438/235212372-c7379918-fda2-486c-8b3c-533312155528.png">
+  <img width="800" height="300" src="https://user-images.githubusercontent.com/122291438/235212372-c7379918-fda2-486c-8b3c-533312155528.png">
 </p>
 
 ### 4.3 ผล ROC Curve	
 
 <p align="center">
-  <img width="1000" height="500" src="https://user-images.githubusercontent.com/122291438/235212655-f635a1c0-97de-48fc-abfe-2ae04a7ae961.png">
+  <img width="800" height="500" src="https://user-images.githubusercontent.com/122291438/235212655-f635a1c0-97de-48fc-abfe-2ae04a7ae961.png">
 </p>
 	

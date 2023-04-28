@@ -55,7 +55,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 		3.9 การหา Top Source port ที่มีการเกิดtransactionมากที่สุด
 		
 <p align="center">
-  <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235161200-675e846d-fd93-4892-aab1-c7ee69c39089.png">
+  <img width="1000" height="500" src="https://user-images.githubusercontent.com/127765032/235161200-675e846d-fd93-4892-aab1-c7ee69c39089.png">
 </p>			
 
 
@@ -137,7 +137,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 	grid_knn.best_estimator_
 จากการทำ GridSearchCV ได้ค่าพารามิเตอร์คือ KNeighborsClassifier(metric='manhattan', n_neighbors=1)
 <p align="center">
-  <img width="1000" height="150" src="https://user-images.githubusercontent.com/127765032/235183406-75751a0d-546c-4f64-bb32-006d02779e66.png">
+  <img width="1000" height="200" src="https://user-images.githubusercontent.com/127765032/235183406-75751a0d-546c-4f64-bb32-006d02779e66.png">
 </p>
 	
 

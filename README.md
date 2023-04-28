@@ -3,7 +3,7 @@ Project Firewall database
 
 1. Get data from log file link https://www.kaggle.com/datasets/tunguz/internet-firewall-data-set
 
-	Fatih Ertam (2018) ได้วิเคราะห์ข้อมูลการบันทึกบนอุปกรณ์ไฟร์วอลล์และควบคุมการรับส่งข้อมูลทางอินเทอร์เน็ตตามผลการวิเคราะห์ที่มาจากการบันทึกการใช้อุปกรณ์ไฟร์วอลล์ของ Firat University ซึ่งจำแนกข้อมูลออกเป็น 4 คลาส allow deny drop และ reset-both โดยใช้วิธี SVM ได้แก่ Linear, Polynomial, Sigmoid และ RBF วัดประสิทธิภาพของแบบจำลองโดยใช้ Precesion recall และ  F1-score เราสามารถระบุได้ว่าข้อมูลที่สร้างขึ้นจากการจัดหมวดหมู่มีความเกี่ยวข้องกับข้อมูลที่ตั้งใจไว้มากน้อยเพียงใด ในการศึกษานี้ ใช้ 11 ลักษณะ ในการวิเคราะห์ข้อมูลเหตุการณ์จำนวน 65,532 ครั้ง ตามตารางด้านล่างนี้ 
+Fatih Ertam (2018) ได้วิเคราะห์ข้อมูลการบันทึกบนอุปกรณ์ไฟร์วอลล์และควบคุมการรับส่งข้อมูลทางอินเทอร์เน็ตตามผลการวิเคราะห์ที่มาจากการบันทึกการใช้อุปกรณ์ไฟร์วอลล์ของ Firat University ซึ่งจำแนกข้อมูลออกเป็น 4 คลาส allow deny drop และ reset-both โดยใช้วิธี SVM ได้แก่ Linear, Polynomial, Sigmoid และ RBF วัดประสิทธิภาพของแบบจำลองโดยใช้ Precesion recall และ  F1-score เราสามารถระบุได้ว่าข้อมูลที่สร้างขึ้นจากการจัดหมวดหมู่มีความเกี่ยวข้องกับข้อมูลที่ตั้งใจไว้มากน้อยเพียงใด ในการศึกษานี้ ใช้ 11 ลักษณะ ในการวิเคราะห์ข้อมูลเหตุการณ์จำนวน 65,532 ครั้ง ตามตารางด้านล่างนี้ 
 	
 ![Screenshot 2023-04-28 213846](https://user-images.githubusercontent.com/122291438/235178139-78356fc9-1c01-4ac2-80aa-adf48f618edf.png)
 
@@ -19,15 +19,15 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 
 		3.1 จำนวนActionที่เกิดขึ้นในtransaction
 		
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 34" src="https://user-images.githubusercontent.com/127765032/235164910-e0f082c4-f042-4aeb-b368-aed89fd65dd6.png">
+<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 34" src="https://user-images.githubusercontent.com/127765032/235164910-e0f082c4-f042-4aeb-b368-aed89fd65dd6.png">
 		
 		3.2 การหาค่าmeanของ Elapsed time (sec)
 
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 45" src="https://user-images.githubusercontent.com/127765032/235164916-79592a7a-f093-4f59-b899-5e02bccd2ef8.png">
+<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 45" src="https://user-images.githubusercontent.com/127765032/235164916-79592a7a-f093-4f59-b899-5e02bccd2ef8.png">
 
 		3.3 การหาค่า meanของ Bytes
 
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 58" src="https://user-images.githubusercontent.com/127765032/235164925-3aad5a00-bcb3-4344-8aa0-b0588d5bc8a9.png">
+<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 40 58" src="https://user-images.githubusercontent.com/127765032/235164925-3aad5a00-bcb3-4344-8aa0-b0588d5bc8a9.png">
 		
 		
 		3.4 การหา correlation ของ Bytes & time แบบไม่ได้ remove bytes ที่เป็นoutliner ออก
@@ -38,91 +38,43 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 		
 
 
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 24 38" src="https://user-images.githubusercontent.com/127765032/235159698-0f0a7407-7860-46f7-a641-0cc8bc192049.png">
+<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 24 38" src="https://user-images.githubusercontent.com/127765032/235159698-0f0a7407-7860-46f7-a641-0cc8bc192049.png">
 
 		3.8 การหา Top Destionation port ที่มีการเกิดtransactionมากที่สุด
 		3.9 การหา Top Source port ที่มีการเกิดtransactionมากที่สุด
 		
 		
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 30 17" src="https://user-images.githubusercontent.com/127765032/235161200-675e846d-fd93-4892-aab1-c7ee69c39089.png">
+<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 20 30 17" src="https://user-images.githubusercontent.com/127765032/235161200-675e846d-fd93-4892-aab1-c7ee69c39089.png">
 
 
 
 		3.10 การหา Correlation heatmap เพื่อดูความสัมพันธ์ของFeature ทุกตัว
 		
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 19 43" src="https://user-images.githubusercontent.com/127765032/235173429-5b1c5752-d22a-4f45-8c87-b2ed970c338f.png">		
+<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 19 43" src="https://user-images.githubusercontent.com/127765032/235173429-5b1c5752-d22a-4f45-8c87-b2ed970c338f.png">		
 		
 
 4. Traning Model Tools
 
 		4.1 Cart Method
-		#GridSearchCV 
-		tree_clas = DecisionTreeClassifier(random_state=1024)
-		param_tree = {'max_features': ['auto', 'sqrt', 'log2'],
-			      'ccp_alpha': [0.1, .01, .001],
-			      'max_depth' : [3, 4, 5, 6, 7, 8, 9, 10],
-			      'criterion' :['gini', 'entropy']}
-		grid_tree = GridSearchCV(estimator=tree_clas, param_grid=param_tree, cv=5, verbose=True)
-		grid_tree.fit(x_train, y_train)
-		grid_tree.best_estimator_
-		ans_tree = grid_tree.predict(x_test)
-		print(classification_report(y_test, ans_tree))
-จากการทำ GridSearch ได้ค่าพารามิเตอร์คือ DecisionTreeClassifier(ccp_alpha=0.001, criterion='entropy', max_depth=9, max_features='auto', random_state=1024)
+		จากการrun model XGBoot จากข้อมูลtest 30% ได้F1 score = 0.9977 20% ได้F1 score = 0.9975 10% ได้F1 score = 0.9971
 		
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 02 51" src="https://user-images.githubusercontent.com/127765032/235169339-deee6f76-2974-409d-a072-1710a4969754.png">		
+<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 02 51" src="https://user-images.githubusercontent.com/127765032/235169339-deee6f76-2974-409d-a072-1710a4969754.png">		
 	
 		4.2 Random Forest
-		#GridSearchCV 
-		RT_clas = RandomForestClassifier(n_estimators=100,random_state=1024) 
-		param_RT = {'max_features': ['auto', 'sqrt', 'log2'], 
-				    'ccp_alpha': [0.1, .01, .001], 
-				    'max_depth' : [2,3, 4, 5, 6, 7], 
-				    'criterion' :['gini', 'entropy']} 
-		grid_RT = GridSearchCV(estimator=RT_clas, param_grid=param_RT, cv=5, verbose=True) 
-		grid_RT.fit(x_train, y_train) 
-		grid_RT.best_estimator_
-		ans_RT = grid_RT.predict(x_test)
-		print(classification_report(y_test, ans_RT))
-จากการทำ GridSearch ได้ค่าพารามิเตอร์คือ RandomForestClassifier(ccp_alpha=0.001, criterion='entropy', max_depth=7, max_features='auto', random_state=1024)
 
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 52 59" src="https://user-images.githubusercontent.com/127765032/235181209-5c2e318e-b28e-4b73-8ee3-29237d881562.png">
+<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 52 59" src="https://user-images.githubusercontent.com/127765032/235181209-5c2e318e-b28e-4b73-8ee3-29237d881562.png">
 
 
 	
 		4.3 XGBoot
-		xgb_cls = xgb.XGBClassifier(use_label_encoder=False, n_estimators=10)
-		xgb_cls.fit(x_train, y_train.astype(int))
-
-		ans_xgb = xgb_cls.predict(x_test)
-		print(classification_report(y_test, ans_xgb))
-
-		plot_tree(xgb_cls, rankdir='UT', num_trees=1)
-		fig = plt.gcf()
-		fig.set_size_inches(15, 10)
-
-		plt.show()
-		plt.savefig('log2-xgboot.png')
-
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 53 07" src="https://user-images.githubusercontent.com/127765032/235181225-9c3f7524-adc7-49d0-926c-a52342fd17d0.png">
-
-![ดาวน์โหลด (3)](https://user-images.githubusercontent.com/122291438/235189296-016859a0-4102-456e-bbbb-746c24a53cca.png)
+	
+<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 53 07" src="https://user-images.githubusercontent.com/127765032/235181225-9c3f7524-adc7-49d0-926c-a52342fd17d0.png">	
 		
 		4.4 K-NN 
-		#GridSearchCV 
-		knn = KNeighborsClassifier()
-		parameters = {"n_neighbors": range(1,11),
-				      "metric": ('minkowski','euclidean','manhattan'),
-				      "weights": ('uniform','distance')}
-		grid_knn = GridSearchCV(knn, parameters, cv=5)
-		grid_knn.fit(x_train,y_train)
-		grid_knn.best_estimator_
-		ans_knn = grid_knn.predict(x_test)
-		print(classification_report(y_test, ans_knn))
-		
-จากการทำ GridSearch ได้ค่าพารามิเตอร์คือ KNeighborsClassifier(metric='manhattan', n_neighbors=1)
-การ runค่าKNNในการ testข้อมูล 30% ให้F1 score = 0.9936 ในขณะที่ test 20% ได้F1 score 0.9933 และ F1 score 0.9924 Test 10% 
+	จากการrun modle KNN ค่าF1จาการ testข้อมูล 30% ให้F1 score = 0.9936 ในขณะที่ test 20% ได้F1 score 0.9933 และ F1 score 0.9924 Test 10%
+	นั้นสะท้อนในให้เห็นว่่ายิ่งมีdataในการtest มากขึ้นยิ่งเพิ่มประสิทธิภาพของmodel
 
-<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 22 01 37" src="https://user-images.githubusercontent.com/127765032/235183406-75751a0d-546c-4f64-bb32-006d02779e66.png">
+<img width="800" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 22 01 37" src="https://user-images.githubusercontent.com/127765032/235183406-75751a0d-546c-4f64-bb32-006d02779e66.png">
 
 		
 		

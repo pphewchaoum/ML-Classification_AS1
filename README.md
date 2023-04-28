@@ -61,15 +61,18 @@ SVM ที่เลือกฟังก์ชันการเปิดใช�
 	
 		4.2 Random Forest
 
-<img width="1054" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 52 59" src="https://user-images.githubusercontent.com/127765032/235181209-5c2e318e-b28e-4b73-8ee3-29237d881562.png">
+<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 52 59" src="https://user-images.githubusercontent.com/127765032/235181209-5c2e318e-b28e-4b73-8ee3-29237d881562.png">
 
 
 	
 		4.3 XGBoot
-<img width="1054" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 53 07" src="https://user-images.githubusercontent.com/127765032/235181225-9c3f7524-adc7-49d0-926c-a52342fd17d0.png">	
+<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 53 07" src="https://user-images.githubusercontent.com/127765032/235181225-9c3f7524-adc7-49d0-926c-a52342fd17d0.png">	
 		
 		4.4 K-NN
-		4.5 Support Vector Machine 
+
+<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 22 01 37" src="https://user-images.githubusercontent.com/127765032/235183406-75751a0d-546c-4f64-bb32-006d02779e66.png">
+
+		
 		
 
 5. Test

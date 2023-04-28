@@ -67,6 +67,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 		grid_tree.best_estimator_
 		ans_tree = grid_tree.predict(x_test)
 		print(classification_report(y_test, ans_tree))
+จากการทำ GridSearch ได้ค่าพารามิเตอร์คือ DecisionTreeClassifier(ccp_alpha=0.001, criterion='entropy', max_depth=9, max_features='auto', random_state=1024)
 		
 <img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 02 51" src="https://user-images.githubusercontent.com/127765032/235169339-deee6f76-2974-409d-a072-1710a4969754.png">		
 	
@@ -82,6 +83,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 		grid_RT.best_estimator_
 		ans_RT = grid_RT.predict(x_test)
 		print(classification_report(y_test, ans_RT))
+จากการทำ GridSearch ได้ค่าพารามิเตอร์คือ RandomForestClassifier(ccp_alpha=0.001, criterion='entropy', max_depth=7, max_features='auto', random_state=1024)
 
 <img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 52 59" src="https://user-images.githubusercontent.com/127765032/235181209-5c2e318e-b28e-4b73-8ee3-29237d881562.png">
 
@@ -106,7 +108,19 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 ![ดาวน์โหลด (3)](https://user-images.githubusercontent.com/122291438/235189296-016859a0-4102-456e-bbbb-746c24a53cca.png)
 		
 		4.4 K-NN 
-	การ runค่าKNNในการ testข้อมูล 30% ให้F1 score = 0.9936 ในขณะที่ test 20% ได้F1 score 0.9933 และ F1 score 0.9924 Test 10% 
+		#GridSearchCV 
+		knn = KNeighborsClassifier()
+		parameters = {"n_neighbors": range(1,11),
+				      "metric": ('minkowski','euclidean','manhattan'),
+				      "weights": ('uniform','distance')}
+		grid_knn = GridSearchCV(knn, parameters, cv=5)
+		grid_knn.fit(x_train,y_train)
+		grid_knn.best_estimator_
+		ans_knn = grid_knn.predict(x_test)
+		print(classification_report(y_test, ans_knn))
+		
+จากการทำ GridSearch ได้ค่าพารามิเตอร์คือ KNeighborsClassifier(metric='manhattan', n_neighbors=1)
+การ runค่าKNNในการ testข้อมูล 30% ให้F1 score = 0.9936 ในขณะที่ test 20% ได้F1 score 0.9933 และ F1 score 0.9924 Test 10% 
 
 <img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 22 01 37" src="https://user-images.githubusercontent.com/127765032/235183406-75751a0d-546c-4f64-bb32-006d02779e66.png">
 

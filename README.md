@@ -80,6 +80,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 		
 
 5. Test
+
 		5.1 แบ่ง Train 70%  Test 30%
 		5.2 แบ่ง Train 80%  Test 20%
 		5.3 แบ่ง Train 90%  Test 10%

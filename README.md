@@ -83,7 +83,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 จากการทำ GridSearchCV ได้ค่าพารามิเตอร์คือ DecisionTreeClassifier(ccp_alpha=0.001, criterion='entropy', max_depth=9, max_features='auto', random_state=1024)
 
 <p align="center">
-  <img width="800" height="300" src="https://user-images.githubusercontent.com/127765032/235169339-deee6f76-2974-409d-a072-1710a4969754.png">
+  <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235169339-deee6f76-2974-409d-a072-1710a4969754.png">
 </p>	
 	
 		4.2 Random Forest

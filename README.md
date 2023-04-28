@@ -44,6 +44,9 @@ Firewall database จากข้อมูลข้างต้นที่ไ�
 
 		4.1 Cart Method
 		4.2 Random Forest
+		
+<img width="1000" alt="ภาพถ่ายหน้าจอ 2566-04-28 เวลา 21 02 51" src="https://user-images.githubusercontent.com/127765032/235169339-deee6f76-2974-409d-a072-1710a4969754.png">		
+	
 		4.3 XGBoot
 		4.4 K-NN
 		4.5 Support Vector Machine 

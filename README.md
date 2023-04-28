@@ -1,7 +1,7 @@
 # ML-Classification_AS1
 Project Firewall database
 
-1. Get data from log file link https://www.kaggle.com/datasets/tunguz/internet-firewall-data-set
+##1. Get data from log file link https://www.kaggle.com/datasets/tunguz/internet-firewall-data-set
 
 Fatih Ertam (2018) ได้วิเคราะห์ข้อมูลการบันทึกบนอุปกรณ์ไฟร์วอลล์และควบคุมการรับส่งข้อมูลทางอินเทอร์เน็ตตามผลการวิเคราะห์ที่มาจากการบันทึกการใช้อุปกรณ์ไฟร์วอลล์ของ Firat University ซึ่งจำแนกข้อมูลออกเป็น 4 คลาส allow deny drop และ reset-both โดยใช้วิธี SVM ได้แก่ Linear, Polynomial, Sigmoid และ RBF วัดประสิทธิภาพของแบบจำลองโดยใช้ Precesion recall และ  F1-score เราสามารถระบุได้ว่าข้อมูลที่สร้างขึ้นจากการจัดหมวดหมู่มีความเกี่ยวข้องกับข้อมูลที่ตั้งใจไว้มากน้อยเพียงใด ในการศึกษานี้ ใช้ 11 ลักษณะ ในการวิเคราะห์ข้อมูลเหตุการณ์จำนวน 65,532 ครั้ง ตามตารางด้านล่างนี้ 
 	

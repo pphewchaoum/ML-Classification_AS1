@@ -148,7 +148,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 ### 4.1 ผล precision recall และ F1 Score 
 		
 <p align="center">
-  <img width="1000" height="500" src="https://user-images.githubusercontent.com/122291438/235169008-9e32d34a-96b7-4ae5-a718-8c0f09ebd5be.png">
+  <img width="800" height="300" src="https://user-images.githubusercontent.com/122291438/235169008-9e32d34a-96b7-4ae5-a718-8c0f09ebd5be.png">
 </p>
 
 สรุปผล: จากการทดลอง จะเห็นได้อย่างชัดเจนว่าของ F1 score ของ xgboost มากที่สุด = 99.79% ในขณะที่ Model อื่น average อยู่ที่ 87.99% นอกจากนี้ยังสามารถเพิ่ม
@@ -163,6 +163,6 @@ F1 score ของSVM ได้มากกว่าในreport ที่กล
 ### 4.3 ผล ROC Curve	
 
 <p align="center">
-  <img width="800" height="500" src="https://user-images.githubusercontent.com/122291438/235212655-f635a1c0-97de-48fc-abfe-2ae04a7ae961.png">
+  <img width="800" height="300" src="https://user-images.githubusercontent.com/122291438/235212655-f635a1c0-97de-48fc-abfe-2ae04a7ae961.png">
 </p>
 	

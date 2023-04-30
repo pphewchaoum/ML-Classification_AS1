@@ -45,10 +45,10 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235164925-3aad5a00-bcb3-4344-8aa0-b0588d5bc8a9.png">
 </p>	
 		
-### 2.4 การหา correlation ของ Bytes & time แบบไม่ได้ remove bytes ที่เป็นoutliner ออก
-### 2.5 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 1000
-### 2.6 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 10000
-### 2.7 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 100000
+### 2.4 การหา correlation ของ Bytes & time แบบไม่ได้ remove bytes ที่เป็น outliner ออก
+### 2.5 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 1,000
+### 2.6 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 10,000
+### 2.7 การหา correlation ของ Bytes & time แบบปรับค่า น้อยกว่าเท่ากับ 100,000
 	
 <p align="center">
   <img width="1000" height="300" src="https://user-images.githubusercontent.com/127765032/235159698-0f0a7407-7860-46f7-a641-0cc8bc192049.png">

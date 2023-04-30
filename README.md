@@ -71,7 +71,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 </p>		
 		
 
-## 3. Test and Training Model Tools
+## 3. Training and Testing Model 
 
 ### 3.1 Cart Method
 		จากการrun model Cart จากข้อมูลtest 30% ได้F1 score = 0.9977 20% ได้F1 score = 0.9975 10% ได้F1 score = 0.9971

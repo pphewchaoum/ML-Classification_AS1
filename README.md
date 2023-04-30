@@ -25,7 +25,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 
 ข้อจำกัดในงานวิจัยนี้คือ SVM ใช้เพื่อจัดการปัญหาที่เกี่ยวข้องกับสองคลาสขึ้นไป ไม่เหมาะกับการใช้กับข้อมูลที่มีความสูงต่ำกว่า data point จึงต้องแปลงข้อมูลให้อยู่ใน input space ไปสู่ transformed Space ที่เรียกว่า Feature space จึงสามารถใช้ตัวแบบ SVM ได้ในการแบ่ง ข้อมูลด้วย Hyperplane เช่น Polynomial Kernel, Radial Basis Function(RBF), Sigmoid Kernel นอกจากนี้ในงานวิจัยยังใช้แค่ SVM ในการทดลองทั้งที่ยังมี model classification อื่นๆอีกหลายแบบ
 
-## 2. ขั้นตอน Collect data, inspection data, Data Exploration ( EDA ) 
+## 2. ขั้นตอน Collect data, Inspection data, Data Exploration ( EDA ) 
 ### 2.1 จำนวนActionที่เกิดขึ้นในtransaction
 
 	
@@ -68,7 +68,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 </p>		
 		
 
-## 3. Training Model Tools
+## 3. Test and Training Model Tools
 
 ### 3.1 Cart Method
 		จากการrun model Cart จากข้อมูลtest 30% ได้F1 score = 0.9977 20% ได้F1 score = 0.9975 10% ได้F1 score = 0.9971

@@ -65,7 +65,7 @@ SVM+Sigmoid ให้ค่า recall สูงสุด 98.5%  ส่วน SVM
 </p>			
 
 
-### 2.10 การหา Correlation heatmap เพื่อดูความสัมพันธ์ของFeature ทุกตัว
+### 2.6 การหา Correlation heatmap เพื่อดูความสัมพันธ์ของFeature ทุกตัว
 <p align="center">
   <img width="1000" height="500" src="https://user-images.githubusercontent.com/127765032/235173429-5b1c5752-d22a-4f45-8c87-b2ed970c338f.png">
 </p>		
